@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Universal Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Left Panel Styling */
+        .left-panel {
+            width: 50%;
+            background: url('./WhatsApp Image 2024-12-31 at 14.31.32_4b24d3b3.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .left-panel:hover {
+            transform: scale(1.05);
+        }
+
+        .left-panel .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .left-panel .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .left-panel h1 {
+            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .left-panel p {
+            margin: 10px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: orange;
+        }
+
+        /* Right Panel Styling */
+        .right-panel {
+            width: 60%;
+            padding: 40px;
+            overflow-y: auto;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: rgb(64, 72, 16);
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .nav a:hover {
+            color: orange;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .service-box {
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-box:hover {
+            background: orange;
+            color: white;
+            cursor: pointer;
+        }
+        .portfolio-content {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .portfolio-content h3 {
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+        }
+        
+
+
+        footer {
+            margin-top: 20px;
+            background: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        footer a {
+            text-decoration: none;
+            background: orange;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1rem;
+        }
+        
+        footer a:hover {
+            background: black;
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <!-- Left Panel -->
+    <div class="left-panel">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Taha Mehjabin</h1>
+            <p> Full Stack Developer | Trusted Freelancer & Business Owner | Creating Scalable, Secure, and Innovative Solutions</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/taha-mehjabin-hi/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Tajabin" target="_blank">GitHub</a>
+              </div>
+              
+        </div>
+    </div>
+
+
+    <div class="right-panel">
+        <!-- Navigation -->
+        <div class="nav">
+            <!-- <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a> -->
+        </div>
+
+        <!-- About Section -->
+        <button onclick="window.location.href='mailto:your-email@example.com'" style="position: absolute; top: 20px; right: 20px; background-color: #d3b52e; color: white; padding: 12px 25px; border: none; border-radius: 8px; font-size: 16px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); transition: background-color 0.3s ease; cursor: pointer;">
+            Message Me
+        </button>
+        
+
+        <section id="about" style="text-align: justify; line-height: 1.8; margin: 20px 0; color:rgb(66, 35, 13)">
+            <h2 style="text-align: center; margin-bottom: 20px; font-size: 2.5rem; color:rgb(35, 32, 25)">About Me</h2>
+            <p>
+                Hi, I'm a passionate Computer Science and Engineering (CSE) student, driven by a love for technology, problem-solving, and innovation. 
+                With expertise in Java, Python, PHP, C++, HTML & CSS, and SQL, I specialize in crafting efficient, secure, and scalable solutions tailored to unique requirements.
+            </p>
+            <p>
+                My interests and skills go beyond traditional programming. I explore Machine Learning to create intelligent systems, Web Development to build dynamic and engaging user experiences, 
+                and Cybersecurity to ensure robust web application security. My creative edge in UX/UI design allows me to deliver visually appealing and user-friendly websites that leave a lasting impression.
+            </p>
+            <p>
+                In addition to development, I am passionate about research and article writing, exploring emerging trends and sharing insights to drive innovation and create value in every project.
+            </p>
+        </section>
+        <section id="services" style="text-align: justify; line-height: 1.8; margin: 20px 0;">
+            <h2>What I Do</h2>
+            <div class="services">
+                <div class="service-box" id="service-webdev" onclick="togglePortfolio('webdev')">
+                    <h3>Web Development & Design</h3>
+                    <p>Building responsive, user-friendly websites with front-end and back-end expertise.</p>
+                </div>
+                <div class="service-box" id="service-cybersec" onclick="togglePortfolio('cybersec')">
+                    <h3>Cybersecurity Solutions</h3>
+                    <p>Securing web applications through audits, encryption, and secure practices.</p>
+                </div>
+                <div class="service-box" id="service-ml" onclick="togglePortfolio('ml')">
+                    <h3>Machine Learning</h3>
+                    <p>Creating predictive models and intelligent systems for diverse applications.</p>
+                </div>
+                <div class="service-box" id="service-freelance" onclick="togglePortfolio('freelance')">
+                    <h3>Freelance Services</h3>
+                    <p>Offering tailored web solutions, automation, and graphics design and other services.</p>
+                </div>
+                <div class="service-box" id="service-db" onclick="togglePortfolio('db')">
+                    <h3>Database Management</h3>
+                    <p>Designing and optimizing databases for secure and efficient workflows.</p>
+                </div>
+                <div class="service-box" id="service-henna" onclick="togglePortfolio('henna')">
+                    <h3>Henna Business</h3>
+                    <p>Providing organic henna cones and intricate, creative henna designs for all occasions.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Work Samples Sections -->
+        <section id="portfolio-sections" style="display: none; margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
+            <!-- Web Development -->
+            <div id="webdev" class="portfolio-content" style="display: none;">
+                <h3>Web Development & Design Samples</h3>
+                <p>Here are some of my website design projects:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/taha-mehjabin-530789322/details/projects/" target="_blank">Movie Website</a> 
+                        <span> (HTML, CSS, PHP)</span>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/taha-mehjabin-530789322/details/projects/" target="_blank">Banking System Website</S></a> 
+                        <span> (OBJECT ORIENTED PROGRAMMING)</span>
+                    </li>
+                   
+                </ul>
+            
+            </div>
+        
+            <!-- Cybersecurity -->
+            <div id="cybersec" class="portfolio-content" style="display: none;">
+                <h3>Cybersecurity Solutions Samples</h3>
+                <p>Cybersecurity audits and solutions:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/taha-mehjabin-530789322/details/projects/" target="_blank">Web Application Security</a>
+                    </li>
+                   
+                </ul>
+        
+            </div>
+        
+            <!-- Machine Learning -->
+            <div id="ml" class="portfolio-content" style="display: none;">
+                <h3>Machine Learning Samples</h3>
+                <p>Will be there soon :</p>
+                <!-- <ul>
+                    <li>
+                        <a href="https://example.com/ml-project" target="_blank">Predictive Analytics Model</a>
+                    </li>
+                    <li>
+                        <a href="./files/ml-code.zip" download>Download Model Code</a>
+                    </li>
+                </ul>
+                <img src="./images/sample-ml.png" alt="Machine Learning Sample" style="width:100%; border-radius:8px; margin-top:10px;"> -->
+            </div>
+        
+            <!-- Freelance Services -->
+            <div id="freelance" class="portfolio-content" style="display: none;">
+                <h3>Freelance Services Samples</h3>
+                <p>Some freelance work:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/taha-mehjabin-530789322/details/projects/" target="_blank">Freelancing work</a>
+                    </li>
+                    
+                </ul>
+    
+            </div>
+        
+            <!-- Database Management -->
+            <div id="db" class="portfolio-content" style="display: none;">
+                <h3>Database Management Samples</h3>
+                <p>Database design and optimization projects:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/taha-mehjabin-530789322/details/projects/" target="_blank">Optimized Database Schema</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        
+            <!-- Henna Business -->
+            <div id="henna" class="portfolio-content" style="display: none;">
+                <h3>Henna Business Samples</h3>
+                <p>Creative henna designs for various occasions:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100029707671873&mibextid=ZbWKwL" target="_blank">Henna page</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <script>
+    function togglePortfolio(serviceId) {
+        const allSections = document.querySelectorAll('.portfolio-content');
+        const portfolioContainer = document.getElementById('portfolio-sections');
+
+        // Hide all portfolio sections
+        allSections.forEach(section => (section.style.display = 'none'));
+
+        // Show selected section
+        const selectedSection = document.getElementById(serviceId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+            portfolioContainer.style.display = 'block'; // Make the container visible
+        }
+    }
+</script>
+
+        <!-- Why Work With Me Section -->
+        <section id="why-work-with-me" class="why-work-with-me" style="background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 40px auto; font-family: 'Roboto', sans-serif;">
+            <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 20px; color: #333; font-weight: bold; letter-spacing: 1px;">Why Work With Me?</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #333; margin-bottom: 20px; text-align: justify; font-weight: 400;">
+                <strong style="color: #000;">💼 Experience:</strong> Web development, UI/UX design, Cybersecurity, and Freelance graphics design, article writing have equipped me to deliver professional and tailored solutions for diverse needs.
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #333; margin-bottom: 20px; text-align: justify; font-weight: 400;">
+                <strong style="color: #000;">🎨 Diverse Skill Set:</strong> From programming and designing intuitive user interfaces to securing systems and crafting compelling articles, I bring a well-rounded and versatile skill set to every project.
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #333; margin-bottom: 20px; text-align: justify; font-weight: 400;">
+                <strong style="color: #000;">💡 Innovation & Creativity:</strong> I blend technical expertise, creative problem-solving, and storytelling to develop unique solutions, ensuring impactful results—whether in code, design, or content.
+            </p>
+            <p style="font-size: 1.2rem; line-height: 1.8; color: #333; margin-bottom: 20px; text-align: justify; font-weight: 400;">
+                <strong style="color: #000;">🤝 Commitment to Excellence:</strong> I am committed to delivering quality work, on-time performance, and exceeding expectations, ensuring satisfaction across all services, from digital solutions to writing.
+            </p>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Bangladesh | marvime@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
